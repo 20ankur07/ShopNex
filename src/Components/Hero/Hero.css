@@ -48,7 +48,7 @@
     width: 105px;
 }
 
-.hero-latest-btn {
+.hero-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,4 +72,8 @@
 .hero-right img {
   margin-top: 150px;
   margin-left: 138px;
+}
+.hero-button:hover{
+    cursor: pointer;
+    background-color: #e11414;
 }
