@@ -5,6 +5,10 @@ import arrow_icon from '../Assets/arrow.png'
 import hero_image from '../Assets/hero_image.png'
 import { ShopContext } from '../../Context/ShopContext'
 
+const handleCLick = () => {
+    window.scrollTo({ top: 2200, behavior: "smooth" });
+  };
+
 const Hero = () => {
     const {theme}=useContext(ShopContext)
     return (
@@ -20,7 +24,7 @@ const Hero = () => {
                     <p className={'ph_'+theme}>For Everyone</p>
                 </div>
                 <div className="hero-latest-btn">
-                    <div className={'div_'+theme}>Latest Collection</div>
+                   <button onClick={handleCLick} className="hero-button">Latest Collection</button>
                     <img src={arrow_icon} alt="" />
                 </div>
             </div>
